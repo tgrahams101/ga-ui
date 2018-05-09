@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string;
 
-  constructor(private userService: UserService){
+  constructor(private userService: UserService) {
     this.title = `Link's War Chest!`;
   }
 }
