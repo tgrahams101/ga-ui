@@ -3,6 +3,15 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <pre *ngIf="title!=='app'"> {{foes[0].name | uppercase}} </pre>
+  <ul>
+    <li *ngFor="let foe of foes"> 
+      {{foe.name}} is trained by {{trainer.name}}
+    </li>
+  <interval-dir (everySecond)="everySecond()"></interval-dir>
+  </ul>
+  <input [(ngModel)]="trainer.name" />
+  <button type="submit" (click)="onClick()">Click me</button>
   <app-master-sword></app-master-sword> 
   <app-hylian-shield></app-hylian-shield>
 </div>
