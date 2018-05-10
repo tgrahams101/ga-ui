@@ -4,8 +4,9 @@
   <h1 [ngStyle]="{'font-style': 'italic'}">
     Welcome to {{ title }}!
   </h1>
+  <pre> {{ trainer.name }}  </pre>
   <pre *ngIf="title!=='Link\'s War Chest!'"> {{trainer.name | uppercase}} </pre>
-  <ul>
+  <ul *ngIf="trainer.name !== 'Ganondorf'">
     <li *ngFor="let foe of foes">
       {{foe.name}}
       <img src="{{foe.image_url}}" />
