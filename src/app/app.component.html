@@ -1,14 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<interval-dir (everySecond)="everySecond()"></interval-dir>
 <div style="text-align:center">
-  <h1>
+  <h1 [ngStyle]="{'font-style': 'italic'}">
     Welcome to {{ title }}!
   </h1>
-  <pre *ngIf="title!=='app'"> {{foes[0].name | uppercase}} </pre>
+  <pre *ngIf="title!=='Link\'s War Chest!'"> {{trainer.name | uppercase}} </pre>
   <ul>
-    <li *ngFor="let foe of foes"> 
-      {{foe.name}} is trained by {{trainer.name}}
+    <li *ngFor="let foe of foes">
+      {{foe.name}}
+      <img src="{{foe.image_url}}" />
     </li>
-  <interval-dir (everySecond)="everySecond()"></interval-dir>
   </ul>
   <input [(ngModel)]="trainer.name" />
   <button type="submit" (click)="onClick()">Click me</button>

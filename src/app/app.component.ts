@@ -9,33 +9,37 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string;
   trainer = {
-    name: 'Ash'
+    name: 'Link'
   };
   foes = [
     {
       Ndex: 25,
-      name: 'Pikachu',
-      type: 'Electric'
+      name: 'Anubis',
+      type: 'Egyptian',
+      image_url: 'https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/e/e8/OoT_Anubis_Model.png/96px-OoT_Anubis_Model.png'
     },
     {
       Ndex: 10,
-      name: 'Caterpie',
-      type: 'Bug'
+      name: 'Blue Bubble',
+      type: 'Undead',
+      image_url: 'https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/8/8d/Bluebubble.png/183px-Bluebubble.png'
     },
     {
-      Ndex: 39,
-      name: 'Jigglypuff',
-      type: 'Fairy'
+      name: 'Deku Scrub',
+      type: 'Plant',
+      image_url: 'https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/c/c8/Madscrub2.png/240px-Madscrub2.png'
     },
     {
       Ndex: 94,
-       name: 'Gengar',
-      type: 'Ghost'
+       name: 'Gerudo Guard',
+      type: 'Ghost',
+      image_url: 'https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/2/25/GerudoGuardOoT3D.png/180px-GerudoGuardOoT3D.png'
     },
     {
       Ndex: 143,
-      name: 'Snorlax',
-      type: 'Normal'
+      name: 'Armos',
+      type: 'Stone',
+      image_url: 'https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/2/26/OoT_Armos_Model.png/162px-OoT_Armos_Model.png'
     }
   ];
 

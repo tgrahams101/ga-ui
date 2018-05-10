@@ -10,6 +10,9 @@ export class IntervalDir {
   everySecond = new EventEmitter();
 
   constructor() {
-    setInterval(() => this.everySecond.emit('event'), 1000);
+    setInterval(() => this.everySecond.emit('event'), 5000);
+    // (() => {
+    //     this.everySecond.emit('event');
+    // })();
   }
 }
